@@ -4,31 +4,38 @@
         <link rel="stylesheet" href="style.css" />
         <title>Meaghan's Website</title>
     </head>
-    <body id="main">
+    <body>
         <h1>Meaghan Sharrard</h1>
-        <script src="script.js"></script>
         <img src="C:\Users\meagh\OneDrive\Desktop\headshot.jpg"
             alt="Headshot"
             style="float:right;width:300x;height:300px;"
         />
-        <h3>About</h3>
-            <p>Hi there! My name is Meaghan and I’m a recent graduate from Flatiron School’s Software Engineer program. I’m a Full-Stack web developer with a background in art and design, with a love of simple yet visually-appealing aesthetics.</p> 
-            <p>When I’m not focusing on developing, you can find me at my local climbing gym, in the garden, or at the beach with my dog (named Buffy).</p>
-    </div>
-            <h3>Education</h3>
-            <p>Flatiron School’s Software Engineer program (Full-Stack), graduated February 2024.</p>
-            <p>Northern Kentucky University, B.F.A. in Acting, graduated 2011.</p>
-        <h3>Resume</h3>
-            <p>Hard-working, honest, and fun employee with over 16 years customer service experience who adapts well in different situations. Detail-oriented, resourceful, and motivated when completing requests and assignments.</p>
-        <h3>Portfolio</h3>
+        <button type="button" class="collapsible">About</button>
+            <div class="content">
+                <p>Hi there! My name is Meaghan and I’m a recent graduate from Flatiron School’s Software Engineer program. I’m a Full-Stack web developer with a background in art and design, with a love of simple yet visually-appealing aesthetics.</p> 
+                <p>When I’m not focusing on developing, you can find me at my local climbing gym, in the garden, or at the beach with my dog (named Buffy).</p>
+            </div>
+        <button type="button" class="collapsible">Education</button>
+            <div class="content">
+                <p>Flatiron School’s Software Engineer program (Full-Stack), graduated February 2024.</p>
+                <p>Northern Kentucky University, B.F.A. in Acting, graduated 2011.</p>
+            </div>
+        <button type="button" class="collapsible">Resume</button>
+            <div class="content">
+                <p>Hard-working, honest, and fun employee with over 16 years customer service experience who adapts well in different situations. Detail-oriented, resourceful, and motivated when completing requests and assignments.</p>
+            </div>
+        <button type="button" class="collapsible">Portfolio</button>
+            <div class="content">
         <!Project ideas: garden zone finder, Buffy\’s outfit changer-->
-            <p></p>
-                <div class="container">
-                    <form onsubmit="sendEmail(); reset(); return false;>
-                        <h3 class="contact">GET IN TOUCH</h3>
+            </div>
+        <button type="button" class="collapsible">GET IN TOUCH</button>
+            <div class="content">
+            <p>
+                <div id="container">
+                    <form action="" id="contactForm">
 
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
                         <label for="lname">Last Name</label>
                         <input type="text" id="lname" name="lastname" placeholder="Your last name...">
@@ -46,22 +53,10 @@
                         <textarea id="message" name="message" placeholder="Type something..." style="height:200px"></textarea>
 
                         <button type="submit">Send</button>
+                    </p>
                     </form>
+                    </div>
                 </div>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
-                <script>
-                    function sendEmail() {
-                        Email.send({
-                        Host : "smtp.gmail.com",
-                        Username : "email",
-                        Password : "password",
-                        To : 'email',
-                        From : document.getElementbyId("email").value,
-                        Subject : "New Contact Form Inquiry",
-                        Body : "And this is the body"
-                    }).then(
-                    message => alert(message)
-                    }
-                </script>
+                <script src="script.js"></script>
              </body>
 </html>
