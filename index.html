@@ -5,6 +5,7 @@
         <title>Meaghan's Website</title>
     </head>
     <body>
+        <div id="grad">
 
         <!--Test accordion-->
         <div class="wrapper">
@@ -31,11 +32,11 @@
                             >
                                 <p>
                                     Hi there! My name is Meaghan and I’m a recent graduate from Flatiron School’s Software Engineer program. I’m a Full-Stack web developer with a background in art and design, with a love of simple yet visually-appealing aesthetics. 
-                                    When I’m not focusing on developing, you can find me at my local climbing gym, in the garden, or at the beach with my dog (named Buffy).
+                                    When I'm not focusing on developing, you can find me at my local climbing gym, in the garden, or at the beach with my dog (named Buffy).
                                 </p>
                                 <img 
                                     class="accordion-image"
-                                    src="https://marketplace.canva.com/EAFNlEE_OKI/1/0/566w/canva-green-creative-watercolor-stationery-document-h1bo-aMNu7k.jpg"
+                                    src="https://t3.ftcdn.net/jpg/01/41/84/88/360_F_141848864_fOE5gFSTLaEZlp76k7C8n3OXf14cwxkR.jpg"
                                     alt="Green background image"
                                 />
                         </div>
@@ -44,12 +45,16 @@
             </div>
 
             <!--End test accordion-->
-
-        <h1>Meaghan Sharrard</h1>
-        <img src="C:\Users\meagh\OneDrive\Desktop\headshot.jpg"
+        <div class="header">
+        <h1>
+                Meaghan
+                <br>
+                Sharrard
+        </h1>
+        <img class="headshot" src="C:\Users\meagh\OneDrive\Desktop\headshot.jpg"
             alt="Headshot"
-            style="float:right;width:300x;height:300px;"
         />
+    </div>
         <button type="button" class="collapsible">About</button>
             <div class="content">
                 <p>Hi there! My name is Meaghan and I’m a recent graduate from Flatiron School’s Software Engineer program. I’m a Full-Stack web developer with a background in art and design, with a love of simple yet visually-appealing aesthetics.</p> 
@@ -68,7 +73,7 @@
             <div class="content">
         <!Project ideas: garden zone finder, Buffy\’s outfit changer-->
             </div>
-        <button type="button" class="collapsible">GET IN TOUCH</button>
+        <button type="button" class="collapsible">Get in touch</button>
             <div class="content">
             <p>
                 <div id="container">
@@ -90,7 +95,7 @@
                         <input type="text" id="subject" name="subject" placeholder="Subject...">
 
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Type something..." style="height:200px"></textarea>
+                        <textarea type="text" id="message" name="message" placeholder="Type something..." style="height:200px"></textarea>
 
                         <button type="submit">Send</button>
                     </p>
@@ -99,5 +104,6 @@
                 </div>
                 <script src="script.js"></script>
             </div>
+        </div>
         </body>
 </html>
