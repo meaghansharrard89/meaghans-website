@@ -1,13 +1,12 @@
 body {
-    /*background: #80c491;*/
-    font-family: Montserrat, sans-serif;
-    color: black;
-    font-size: 12px;
-    /*Would like to use Didot if possible for the font*/
-}
-
-#grad {
-  background-image: linear-gradient(to bottom left,#e2fade,#80c491);
+  font-family: "DomaineCond,Georgia,serif";
+  font-size: clamp(5.5rem,28vw,7rem);
+  background: #FFC6AC;
+  font-weight: 400;
+  color: black;
+  font-size: 12px;
+  margin: 0;
+  height: auto;
 }
 
 /*Test accordion CSS*/
@@ -70,11 +69,11 @@ SVG Icons - svgicons.sparkk.fr
 .about-icon path,
 .about-icon polygon,
 .about-icon rect {
-  fill: #4691f6;
+  fill: #84878b;
 }
 
 .about-icon circle {
-  stroke: #4691f6;
+  stroke: #84878b;
   stroke-width: 1;
 }
 
@@ -83,26 +82,36 @@ SVG Icons - svgicons.sparkk.fr
 .header {
   padding: 5px;
   display: flex;
+  height: 400px;
 }
 
 h1 {
   position: relative;
   font-size: 45px;
-  margin: auto;
+  /*margin-right: 25px;*/
   display: block;
   margin: auto;
-  padding: 2em 2em 0.75em 2em;
+  /*will mess around with this to move header left*/
+  padding: 2em 5em 2em 2em;
 }
 
 .headshot {
   float: left;
   display: block;
-  inset: 0;
-  object-fit: cover;
-  padding: 2em 2em 0.75em 2em;
-  width:300x;
-  height:300px;
-  margin: auto;
+  position: absolute;
+  z-index: 1;
+  width:300px;
+  height:auto;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 30%;
+}
+
+.squiggle {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin-right: 75px;
 }
 
 input[type=text] {
@@ -155,10 +164,11 @@ input[type=text] {
 
   form button {
     padding: 15px;
-    background: #699a75;
-    color: white;
+    background: #3b7d54;
+    color: black;
     font-size: 18px;
     border: 0;
+    text-transform: uppercase;
     outline: none;
     cursor: pointer;
     width: 150px;
@@ -169,10 +179,10 @@ input[type=text] {
   /* Style the button that is used to open and close the collapsible content */
 
 .collapsible {
-  background-color: #fafaf0;
+  background-color: #C4C1A4;
   color: ##100f0f;
   cursor: pointer;
-  padding: 18px;
+  padding: 25px 18px;
   width: 100%;
   border: none;
   text-align: left;
@@ -183,14 +193,14 @@ input[type=text] {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 .active, .collapsible:hover {
-  background-color: #699a75;
+  background-color: #3b7d54;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 
 .content {
-  padding: 0 18px;
+  padding: 0px 18px;
   display: none;
   overflow: hidden;
-  background-color: #ececda;
+  background-color: #FFF6DC;
 }
