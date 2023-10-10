@@ -1,3 +1,34 @@
+/*test accordion
+const accordion = document.getElementsByClassName("collapsible");
+
+accordion.addEventListener("click", (e) => {
+  const activePanel = e.target.closest(".collapsible");
+  if (!activePanel) return;
+  toggleAccordion(activePanel);
+});
+
+function toggleAccordion(panelToActivate) {
+  const buttons = panelToActivate.parentElement.querySelectorAll("button");
+  const contents = panelToActivate.parentElement.querySelectorAll(".content");
+
+buttons.forEach((button) => {
+  button.setAttribute("aria-expanded", false);
+  });
+
+contents.forEach((content) => {
+  content.setAttribute("aria-hidden", true);
+  });
+
+panelToActivate
+  .querySelector('button')
+  .setAttribute('aria-expanded', true);
+
+panelToActivate
+  .querySelector('.content')
+  .setAttribute('aria-hidden', false);
+}*/
+
+//accordion
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

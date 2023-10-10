@@ -125,6 +125,14 @@ input[type=text] {
     resize: vertical;
   } 
 
+  .content {
+    padding: 0px 18px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #FFF6DC;
+  }
+
   textarea[type=text] {
     width: 100%;
     padding: 12px;
@@ -158,7 +166,7 @@ input[type=text] {
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: #fcfbf1;
+    background: #C4C1A4;
     color: #111111;
   }
 
@@ -180,27 +188,17 @@ input[type=text] {
 
 .collapsible {
   background-color: #C4C1A4;
-  color: ##100f0f;
+  color: #100f0f;
   cursor: pointer;
   padding: 25px 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-}
+  font-size: 17px;
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 .active, .collapsible:hover {
   background-color: #3b7d54;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-
-.content {
-  padding: 0px 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #FFF6DC;
 }
