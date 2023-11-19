@@ -1,5 +1,17 @@
+h1 {
+  position: relative;
+  font-size: 70px;
+  font-family: 'Londrina Outline';
+  font-weight: 550;
+  /*margin-right: 25px;*/
+  display: block;
+  margin: auto;
+  /*will mess around with this to move header left*/
+  padding: 2em 5em 2em 2em;
+}
+
 body {
-  font-family: "DomaineCond,Georgia,serif";
+  font-family: 'Quicksand', sans-serif;
   font-size: clamp(5.5rem,28vw,7rem);
   background: #FFC6AC;
   font-weight: 400;
@@ -83,16 +95,6 @@ SVG Icons - svgicons.sparkk.fr
   padding: 5px;
   display: flex;
   height: 400px;
-}
-
-h1 {
-  position: relative;
-  font-size: 45px;
-  /*margin-right: 25px;*/
-  display: block;
-  margin: auto;
-  /*will mess around with this to move header left*/
-  padding: 2em 5em 2em 2em;
 }
 
 .headshot {
@@ -188,6 +190,7 @@ input[type=text] {
 
 .collapsible {
   background-color: #C4C1A4;
+  font-family: 'Quicksand', sans-serif;
   color: #100f0f;
   cursor: pointer;
   padding: 25px 18px;
