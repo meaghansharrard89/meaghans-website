@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>Meaghan's Website</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Londrina Outline' rel='stylesheet'>
-    </head>
-    <body>
-        <div id="grad">
-        <div class="header">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Meaghan's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="grad">
+      <div class="header">
         <h1>
-                Meaghan
-                <br>
-                 Sharrard
+          Meaghan
+          <br />
+          Sharrard
         </h1>
         <div class="img-container">
-        <img class="headshot top" src='headshot.jpg'
-            alt="Headshot"
-            />
-        <img class="squiggle bottom" src='squiggle6.png'
-            alt="squiggle"
-        />
+          <img class="headshot top" src="headshot.jpg" alt="Headshot" />
+          <img class="squiggle bottom" src="squiggle6.png" alt="squiggle" />
         </div>
-        </div>
-        <button type="button" class="collapsible">About</button>
-            <div class="content">
-                <h3>Hi there! My name is Meaghan and I’m currently attending Flatiron School’s Software Engineer program (graduating in February 2024). I’m an aspiring full-stack web developer with a background in art and design, with a love of simple yet visually-appealing aesthetics. When I’m not coding, you can find me at my local climbing gym, in the garden, or at the beach with my dog (named Buffy).</h3>
-            </div>
-        <button type="button" class="collapsible">Education</button>
-            <div class="content">
-                <h3>Flatiron School’s Software Engineer program (full-stack), expected February 2024.</h3>
-                <h3>Northern Kentucky University, B.F.A. in Acting, 2007-2011.</h3>
-            </div>
-        <button type="button" class="collapsible">Resume</button>
-            <div class="content">
-                <h3><a href="https://www.linkedin.com/in/meaghan-sharrard/">Check out my LinkedIn!</a></h3>
-                <img src="Resume.png" />
-            </div>
-        <button type="button" class="collapsible">Portfolio</button>
-            <div class="content">
-                <h3><a href="https://github.com/Hanna-N9/coffee-worldwide">Bean There, Drank That: a React Project</a></h3>
-                <h3><a href="https://github.com/meaghansharrard89/python-p3-v2-final-project-template">The Cookbook Chronicles: a CLI Project</a></h3>
-            </div>
-        <!-- <button type="button" class="collapsible">Get in touch</button>
+      </div>
+    </div>
+
+    <div class="accordion-container">
+      <button type="button" class="collapsible slow-transition">About</button>
+      <div class="content">
+        <h3>
+          Hi there! My name is Meaghan and I’m currently attending Flatiron
+          School’s Software Engineer program (graduating in February 2024). I’m
+          an aspiring full-stack web developer with a background in art and
+          design, with a love of simple yet visually-appealing aesthetics. When
+          I’m not coding, you can find me at my local climbing gym, in the
+          garden, or at the beach with my dog (named Buffy).
+        </h3>
+      </div>
+
+      <button type="button" class="collapsible slow-transition">
+        Education
+      </button>
+      <div class="content">
+        <h3>
+          Flatiron School’s Software Engineer program (full-stack), expected
+          February 2024.
+        </h3>
+        <h3>Northern Kentucky University, B.F.A. in Acting, 2007-2011.</h3>
+      </div>
+
+      <button type="button" class="collapsible slow-transition">Resume</button>
+      <div class="content">
+        <h3>
+          <a href="https://www.linkedin.com/in/meaghan-sharrard/"
+            >Check out my LinkedIn!</a
+          >
+        </h3>
+        <img src="Resume.png" />
+      </div>
+
+      <button type="button" class="collapsible slow-transition">
+        Portfolio
+      </button>
+      <div class="content">
+        <h3>
+          <a href="https://github.com/Hanna-N9/coffee-worldwide"
+            >Bean There, Drank That: a React Project</a
+          >
+        </h3>
+        <h3>
+          <a
+            href="https://github.com/meaghansharrard89/python-p3-v2-final-project-template"
+            >The Cookbook Chronicles: a CLI Project</a
+          >
+        </h3>
+      </div>
+      <!-- <button type="button" class="collapsible">Get in touch</button>
             <div class="content">
             <p>
                 <div id="container">
@@ -73,8 +112,6 @@
                     </form>
                     </div>
                 </div> -->
-                <script src="script.js"></script>
-            </div>
-        </div>
-        </body>
+    </div>
+  </body>
 </html>

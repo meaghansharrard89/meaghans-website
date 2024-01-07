@@ -1,7 +1,7 @@
 h1 {
   position: relative;
   font-size: 70px;
-  font-family: 'Londrina Outline';
+  font-family: "Permanent Marker", cursive;
   font-weight: 550;
   /*margin-right: 25px;*/
   display: block;
@@ -11,82 +11,18 @@ h1 {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-size: clamp(5.5rem,28vw,7rem);
-  background: #FFC6AC;
-  font-weight: 400;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: clamp(5.5rem, 28vw, 7rem);
+  background: #ffc6ac;
   color: black;
   font-size: 12px;
   margin: 0;
   height: auto;
 }
 
-/*Test accordion CSS*/
-
-.wrapper {
-  max-width: 50rem;
-  margin-inline: auto;
-  padding-inline: 1rem;
-}
-
-/*img {
-  max-width: 100%;
-  display: block;
-}*/
-
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.accordion-panel {
-  position: relative;
-  isolation: isolate;
-}
-
-.accordion-image {
-  max-width: 100%;
-  display: block;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.accordion-trigger {
-  background: transparent;
-  border: 0;
-}
-
-.accordion-icon {
-  background: hsl(0 0% 0% / 0.55);
-  width: 3rem;
-  aspect-ratio: 1 / 1;
-  padding: 0.75rem;
-  border-radius: 50%;
-}
-
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
-
-.about-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.about-icon path,
-.about-icon polygon,
-.about-icon rect {
-  fill: #84878b;
-}
-
-.about-icon circle {
-  stroke: #84878b;
-  stroke-width: 1;
+h3 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: lighter;
 }
 
 /*Begin website*/
@@ -102,8 +38,8 @@ SVG Icons - svgicons.sparkk.fr
   display: block;
   position: absolute;
   z-index: 1;
-  width:300px;
-  height:auto;
+  width: 300px;
+  height: auto;
   margin-top: 10px;
   margin-left: 100px;
   border-radius: 30%;
@@ -116,7 +52,7 @@ SVG Icons - svgicons.sparkk.fr
   margin-right: 75px;
 }
 
-input[type=text] {
+/* input[type=text] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -125,17 +61,17 @@ input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  } 
+  }  */
 
-  .content {
-    padding: 0px 18px;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: #FFF6DC;
-  }
+.content {
+  padding: 0px 18px;
+  display: none;
+  overflow: hidden;
+  /* transition: max-height 0.5s ease-out; */
+  background-color: #fff6dc;
+}
 
-  textarea[type=text] {
+/* textarea[type=text] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -144,17 +80,17 @@ input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+  } */
 
-  input[type=submit] {
+/* input[type=submit] {
     color: #d9e4e0;
     padding: 12px 20px;
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-  }
+  } */
 
-  #container {
+/* #container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -163,6 +99,7 @@ input[type=text] {
     border-radius: 5px;
     padding: 20px;
   }
+
   form input, form textarea {
     border: 0;
     margin: 10px 0;
@@ -170,9 +107,9 @@ input[type=text] {
     outline: none;
     background: #C4C1A4;
     color: #111111;
-  }
+  } */
 
-  form button {
+/* form button {
     padding: 15px;
     background: #3b7d54;
     color: black;
@@ -184,13 +121,13 @@ input[type=text] {
     width: 150px;
     margin: 20px auto 0;
     border-radius: 5px;
-  }
+  } */
 
-  /* Style the button that is used to open and close the collapsible content */
+/* Style the button that is used to open and close the collapsible content */
 
 .collapsible {
-  background-color: #C4C1A4;
-  font-family: 'Quicksand', sans-serif;
+  background-color: #c4c1a4;
+  font-family: "Hind Madurai", sans-serif;
   color: #100f0f;
   cursor: pointer;
   padding: 25px 18px;
@@ -199,9 +136,27 @@ input[type=text] {
   text-align: left;
   outline: none;
   font-size: 17px;
+  transition: background-color 0.5s;
+}
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active, .collapsible:hover {
+.collapsible.active,
+.collapsible:hover {
   background-color: #3b7d54;
+}
+
+.collapsible.active + .content {
+  display: block;
+  max-height: 0px; /* Adjust the value to control the dropdown speed */
+  transition: max-height 0.5s ease-out; /* Add this line for smoother transition */
+}
+
+.slow-transition {
+  max-height: 0px; /* Set initial max-height to 0 for hiding content */
+  overflow: hidden; /* Hide overflow to prevent content from being visible */
+  transition: max-height 0.5s ease-out; /* Adjust the duration as needed */
+}
+
+/* Optional: Add a class to the content container for slower transition */
+.content.slow-transition {
+  transition: max-height 0.5s ease-out; /* Adjust the duration as needed */
 }
