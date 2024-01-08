@@ -3,10 +3,8 @@ h1 {
   font-size: 70px;
   font-family: "Permanent Marker", cursive;
   font-weight: 550;
-  /*margin-right: 25px;*/
   display: block;
   margin: auto;
-  /*will mess around with this to move header left*/
   padding: 2em 5em 2em 2em;
 }
 
@@ -24,8 +22,6 @@ h3 {
   font-family: "Hind Madurai", sans-serif;
   font-weight: lighter;
 }
-
-/*Begin website*/
 
 .header {
   padding: 5px;
@@ -52,16 +48,16 @@ h3 {
   margin-right: 75px;
 }
 
-/* input[type=text] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }  */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
 .content {
   padding: 0px 18px;
@@ -71,59 +67,57 @@ h3 {
   background-color: #fff6dc;
 }
 
-/* textarea[type=text] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  } */
+textarea[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-/* input[type=submit] {
-    color: #d9e4e0;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-  } */
+input[type="submit"] {
+  color: #d9e4e0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-/* #container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    padding: 20px;
-  }
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 20px;
+}
 
-  form input, form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: #C4C1A4;
-    color: #111111;
-  } */
-
-/* form button {
-    padding: 15px;
-    background: #3b7d54;
-    color: black;
-    font-size: 18px;
-    border: 0;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 5px;
-  } */
-
-/* Style the button that is used to open and close the collapsible content */
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #c4c1a4;
+  color: #111111;
+}
+*/ form button {
+  padding: 15px;
+  background: #3b7d54;
+  color: black;
+  font-size: 18px;
+  border: 0;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+}
 
 .collapsible {
   background-color: #c4c1a4;
