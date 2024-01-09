@@ -1,6 +1,7 @@
 h1 {
   position: relative;
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 5em; /* Adjust the value as needed */
   font-family: "Permanent Marker", cursive;
   font-weight: 550;
   display: block;
@@ -10,10 +11,10 @@ h1 {
 
 body {
   font-family: "Playfair Display", serif;
-  font-size: clamp(5.5rem, 28vw, 7rem);
+  /* font-size: clamp(5.5rem, 28vw, 7rem); */
   background: #ffc6ac;
   color: black;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
   height: auto;
 }
@@ -21,6 +22,7 @@ body {
 h3 {
   font-family: "Playfair Display", serif;
   font-weight: lighter;
+  font-size: 1.5em; /* Adjust the value as needed */
 }
 
 .header {
@@ -29,14 +31,19 @@ h3 {
   height: 400px;
 }
 
+#grad {
+  margin-bottom: 100px; /* Adjust the margin as needed */
+}
+
 .headshot {
   float: left;
   display: block;
   position: absolute;
   z-index: 1;
   width: 300px;
+  max-width: 100%;
   height: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 100px;
   border-radius: 30%;
 }
@@ -46,6 +53,8 @@ h3 {
   width: 600px;
   height: 400px;
   margin-right: 75px;
+  padding-top: 20px;
+  /* max-width: 100%; */
 }
 
 input[type="text"] {
@@ -62,6 +71,7 @@ input[type="text"] {
 .content {
   padding: 0px 18px;
   display: none;
+  flex-grow: 1;
   overflow: hidden;
   background-color: #fff6dc;
 }
@@ -87,24 +97,36 @@ input[type="submit"] {
 
 #container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   padding: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+}
+
+form {
+  width: 80%; /* Adjust the width of the form container as needed */
+  max-width: 600px; /* Set a maximum width to prevent the form from becoming too wide */
 }
 
 form input,
 form textarea {
-  border: 0;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background: #c4c1a4;
-  color: #111111;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-*/ form button {
+
+form button {
   padding: 15px;
   background: #3b7d54;
   color: black;
@@ -113,9 +135,11 @@ form textarea {
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
-  width: 150px;
+  /* width: 150px; */
   margin: 20px auto 0;
   border-radius: 5px;
+  width: 100%; /* or adjust as needed */
+  padding: 10px; /* Adjust padding as needed */
 }
 
 .collapsible {
@@ -152,4 +176,38 @@ form textarea {
 /* Optional: Add a class to the content container for slower transition */
 .content.slow-transition {
   transition: max-height 0.5s ease-out; /* Adjust the duration as needed */
+}
+
+.accordion-container {
+  background-color: #c4c1a4;
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Default styles for all screen sizes */
+
+/* Media query for screens 600 pixels and smaller */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5em; /* Adjust the value as needed */
+  }
+
+  /* Add more styles for small screens */
+}
+
+/* Media query for screens 768 pixels and smaller */
+@media only screen and (max-width: 768px) {
+  /* Add styles for medium-sized screens */
+}
+
+/* Media query for screens 1024 pixels and smaller */
+@media only screen and (max-width: 1024px) {
+  /* Add styles for larger screens */
+}
+
+/* Default styles for all screen sizes */
+
+/* Media query for screens 600 pixels and smaller */
+@media only screen and (max-width: 600px) {
+  /* Styles for small screens (mobile) */
 }
