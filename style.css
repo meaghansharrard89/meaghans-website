@@ -1,6 +1,6 @@
 h1 {
   position: relative;
-  font-size: 5em; /* Adjust the value as needed */
+  font-size: 5em;
   font-family: "Permanent Marker", cursive;
   font-weight: 550;
   display: block;
@@ -20,7 +20,7 @@ body {
 h3 {
   font-family: "Playfair Display", serif;
   font-weight: lighter;
-  font-size: 1.5em; /* Adjust the value as needed */
+  font-size: 1.5em;
 }
 
 .header {
@@ -28,20 +28,19 @@ h3 {
   display: flex;
   height: 400px;
   align-items: center;
-  justify-content: space-between; /* Align items to the right */
+  justify-content: space-between;
 }
 
 #grad {
-  margin-bottom: 100px; /* Adjust the margin as needed */
+  margin-bottom: 100px;
 }
 
 .img-container {
   position: relative;
-  /* margin-right: 20px; */
 }
 
 .logo {
-  margin-right: 20px; /* Adjust the margin to move the logo to the right */
+  margin-right: 20px;
 }
 
 .project2 {
@@ -50,9 +49,8 @@ h3 {
 }
 
 .project3 {
-  width: auto; /* Set width to auto to maintain aspect ratio */
-  height: 400px; /* Set the desired height */
-  /* You can also remove the max-width property if needed */
+  width: auto;
+  height: 400px;
 }
 
 .headshot {
@@ -88,10 +86,12 @@ input[type="text"] {
 
 .content {
   padding: 0px 18px;
-  display: none;
+  display: block; /* Change 'none' to 'block' */
   flex-grow: 1;
   overflow: hidden;
   background-color: #fff6dc;
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.5s ease-out;
 }
 
 textarea[type="text"] {
@@ -127,8 +127,8 @@ input[type="submit"] {
 }
 
 form {
-  width: 80%; /* Adjust the width of the form container as needed */
-  max-width: 600px; /* Set a maximum width to prevent the form from becoming too wide */
+  width: 80%;
+  max-width: 600px;
 }
 
 form input,
@@ -152,11 +152,10 @@ form button {
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
-  /* width: 150px; */
   margin: 20px auto 0;
   border-radius: 5px;
-  width: 100%; /* or adjust as needed */
-  padding: 10px; /* Adjust padding as needed */
+  width: 100%;
+  padding: 10px;
 }
 
 .collapsible {
@@ -180,54 +179,49 @@ form button {
 
 .collapsible.active + .content {
   display: block;
-  max-height: 0px; /* Adjust the value to control the dropdown speed */
-  transition: max-height 0.5s ease-out; /* Add this line for smoother transition */
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
 }
 
 .slow-transition {
-  max-height: 0px; /* Set initial max-height to 0 for hiding content */
-  overflow: hidden; /* Hide overflow to prevent content from being visible */
-  transition: max-height 0.5s ease-out; /* Adjust the duration as needed */
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 
-/* Optional: Add a class to the content container for slower transition */
 .content.slow-transition {
-  transition: max-height 0.5s ease-out; /* Adjust the duration as needed */
+  transition: max-height 0.5s ease-out;
 }
 
 .accordion-container {
   background-color: #c4c1a4;
-  padding: 20px; /* Add padding as needed */
-  box-sizing: border-box; /* Include padding in element's total width and height */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Default styles for all screen sizes */
 
-/* Media query for screens 600 pixels and smaller */
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2.5em; /* Adjust the value as needed */
+    font-size: 2.5em;
   }
-
-  /* Add more styles for small screens */
 }
 
-/* Media query for screens 768 pixels and smaller */
 @media only screen and (max-width: 768px) {
   /* Add styles for medium-sized screens */
 }
 
-/* Media query for screens 1024 pixels and smaller */
 @media only screen and (max-width: 1024px) {
   /* Add styles for larger screens */
 }
 
 /* Default styles for all screen sizes */
 
-/* Media query for screens 600 pixels and smaller */
 @media only screen and (max-width: 600px) {
   /* Styles for small screens (mobile) */
 }
+
+/* Fade-in once page loads/refreshes */
 
 .logo-container,
 .img-container,
