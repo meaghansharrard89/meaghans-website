@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <title>Meaghan's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Header font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,9 +14,12 @@
     />
 
     <!--Website font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="script.js" defer></script>
   </head>
@@ -29,11 +32,7 @@
         </div>
         <div class="img-container">
           <img class="headshot top" src="images/headshot.jpg" alt="Headshot" />
-          <img
-            class="stars"
-            src="images/stars.png"
-            alt="stars"
-          />
+          <img class="stars" src="images/stars.png" alt="stars" />
         </div>
       </div>
     </div>
@@ -69,7 +68,7 @@
             >Check out my LinkedIn!</a
           >
         </h3>
-        <img src="images/Resume.png" class="resume"/>
+        <img src="images/Resume.png" class="resume" />
       </div>
 
       <button type="button" class="collapsible slow-transition">
@@ -80,55 +79,96 @@
           <a href="https://github.com/meaghansharrard89/coffee-worldwide"
             >Bean There, Drank That: a React Project</a
           >
-          </h3>
-          <img class="project2" src="images/project2.png" alt="Bean There, Drank That!"/>
-          <h3>
-            <a href="https://www.linkedin.com/posts/meaghan-sharrard_react-activity-7138994740653428737-9zpC?utm_source=share&utm_medium=member_desktop"
-            >Bean There, Drank That walkthrough</a>
-          </h3>
+        </h3>
+        <img
+          class="project2"
+          src="images/project2.png"
+          alt="Bean There, Drank That!"
+        />
+        <h3>
+          <a
+            href="https://www.linkedin.com/posts/meaghan-sharrard_react-activity-7138994740653428737-9zpC?utm_source=share&utm_medium=member_desktop"
+            >Bean There, Drank That walkthrough</a
+          >
+        </h3>
         <h3>
           <a
             href="https://github.com/meaghansharrard89/python-p3-v2-final-project-template"
             >The Cookbook Chronicles: a CLI Project</a
           >
-          </h3>
-          <img class="project3" src="images/project3.png" alt="The Cookbook Chronicles"/>
-          <h3>
-            <a href="https://www.linkedin.com/posts/meaghan-sharrard_python-activity-7150530073140334592-DfYl/?utm_source=share&utm_medium=member_desktop"
-            >Project walkthrough</a>
-          </h3>
+        </h3>
+        <img
+          class="project3"
+          src="images/project3.png"
+          alt="The Cookbook Chronicles"
+        />
+        <h3>
+          <a
+            href="https://www.linkedin.com/posts/meaghan-sharrard_python-activity-7150530073140334592-DfYl/?utm_source=share&utm_medium=member_desktop"
+            >Project walkthrough</a
+          >
+        </h3>
       </div>
 
       <form action="submit_form.php" method="post" id="contactForm">
-      <button type="button" class="collapsible slow-transition">Get in touch</button>
-            <div class="content">
-            <p>
-                <div id="container">
-                    <form action="" id="contactForm">
+        <button type="button" class="collapsible slow-transition">
+          Get in touch
+        </button>
+        <div class="content">
+          <div id="container">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name..."
+            />
 
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name..."
+            />
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="emailaddress"
+              placeholder="Email..."
+            />
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="emailaddress" placeholder="Email...">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              id="phone"
+              name="phonenumber"
+              placeholder="Phone..."
+            />
 
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" name="phonenumber" placeholder="Phone...">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject..."
+            />
 
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject...">
+            <label for="message">Message</label>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Type something..."
+              style="height: 200px"
+            ></textarea>
 
-                        <label for="message">Message</label>
-                        <textarea type="text" id="message" name="message" placeholder="Type something..." style="height:200px"></textarea>
-
-                        <button type="submit">Send</button>
-                        <!-- </form> -->
-                    </p>
-                    </div>
-                </div>
+            <button type="submit" class="submit">Send</button>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>

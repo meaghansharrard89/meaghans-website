@@ -40,7 +40,9 @@ h3 {
 }
 
 .logo {
-  margin-right: 20px;
+  max-width: 100%;
+  height: auto;
+  /* margin-right: 10px; */
 }
 
 .project2 {
@@ -61,214 +63,230 @@ h3 {
   height: auto;
 }
 
-  .headshot {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-
-  .stars {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    max-width: 100%;
-    z-index: 1;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  .content {
-    padding: 0px 18px;
-    display: block; /* Change 'none' to 'block' */
-    flex-grow: 1;
-    overflow: hidden;
-    background-color: #fff6dc;
-    max-height: 0; /* Initially hidden */
-    transition: max-height 0.5s ease-out;
-  }
-
-  textarea[type="text"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  input[type="submit"] {
-    color: #d9e4e0;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  #container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0 auto;
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  form {
-    width: 80%;
-    max-width: 600px;
-  }
-
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  form button {
-    padding: 15px;
-    background: #3b7d54;
-    color: black;
-    font-size: 18px;
-    border: 0;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
-    margin: 20px auto 0;
-    border-radius: 5px;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .collapsible {
-    background-color: #c4c1a4;
-    font-family: "Playfair Display", serif;
-    color: #100f0f;
-    cursor: pointer;
-    padding: 25px 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 17px;
-    transition: background-color 0.5s;
-  }
-
-  .collapsible.active,
-  .collapsible:hover {
-    background-color: #3b7d54;
-  }
-
-  .collapsible.active + .content {
-    display: block;
-    max-height: 0px;
-    transition: max-height 0.5s ease-out;
-  }
-
-  .slow-transition {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-  }
-
-  .content.slow-transition {
-    transition: max-height 0.5s ease-out;
-  }
-
-  .accordion-container {
-    background-color: #c4c1a4;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-
-  /* Default styles for all screen sizes */
-
-  @media only screen and (max-width: 600px) {
-    h1 {
-      font-size: 2.5em;
-    }
-
-    .img-container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
-    }
-
-    .headshot,
-    .stars {
-      display: block; /* Adjust as needed */
-      width: 100%; /* Adjust as needed */
-      max-width: none; /* Remove max-width restriction */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 0; /* Remove border-radius */
-      margin: 10px 0; /* Add margin as needed */
-      position: static; /* Remove absolute positioning */
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    h1 {
-      font-size: 2.5em;
-    }
-
-    .headshot,
-    .stars {
-      display: block; /* Adjust as needed */
-      position: static; /* Remove absolute positioning */
-      width: 100%; /* Adjust as needed */
-      max-width: none; /* Remove max-width restriction */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 0; /* Remove border-radius */
-      margin: 10px 0; /* Add margin as needed */
-    }
-  }
+.headshot {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
-@media only screen and (max-width: 1024px) {
+.stars {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.content {
+  padding: 0px 18px;
+  display: block; /* Change 'none' to 'block' */
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: #fff6dc;
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.5s ease-out;
+}
+
+textarea[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  color: #d9e4e0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* #container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+} */
+
+#container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* form {
+  width: 80%;
+  max-width: 600px;
+} */
+
+form {
+  width: 100%;
+}
+
+/* form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+} */
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* form button {
+  padding: 15px;
+  background: #3b7d54;
+  color: black;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+} */
+
+.submit {
+  padding: 15px;
+  background: #3b7d54;
+  color: black;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 0 0; /* Adjusted margin */
+  border-radius: 5px;
+  width: 100%;
+}
+
+.collapsible {
+  background-color: #c4c1a4;
+  font-family: "Playfair Display", serif;
+  color: #100f0f;
+  cursor: pointer;
+  padding: 25px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: background-color 0.5s;
+}
+
+.collapsible.active,
+.collapsible:hover {
+  background-color: #3b7d54;
+}
+
+.collapsible.active + .content {
+  display: block;
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
+}
+
+.slow-transition {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.content.slow-transition {
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-container {
+  background-color: #c4c1a4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line */
+}
+
+/* Default styles for all screen sizes */
+
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 2.5em;
+  }
+
+  .img-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
   }
 
   .headshot,
   .stars {
     display: block; /* Adjust as needed */
-    position: static; /* Remove absolute positioning */
     width: 100%; /* Adjust as needed */
     max-width: none; /* Remove max-width restriction */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border-radius */
     margin: 10px 0; /* Add margin as needed */
+    position: static; /* Remove absolute positioning */
   }
+
+  #container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 1024px) {
 }
 
 /* Fade-in once page loads/refreshes */
