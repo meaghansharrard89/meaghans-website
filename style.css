@@ -215,20 +215,25 @@ h3 {
   /* Default styles for all screen sizes */
 
   @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  .logo,
-  .headshot,
-  .stars {
-    display: block;
-    margin: 10px auto; /* Center items horizontally */
-    width: 100%; /* Adjust as needed */
-    max-width: none; /* Remove max-width restriction */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0; /* Remove border-radius */
-  }
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .img-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+
+    .headshot,
+    .stars {
+      display: block; /* Adjust as needed */
+      width: 100%; /* Adjust as needed */
+      max-width: none; /* Remove max-width restriction */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 0; /* Remove border-radius */
+      margin: 10px 0; /* Add margin as needed */
+      position: static; /* Remove absolute positioning */
+    }
   }
 
   @media only screen and (max-width: 768px) {
