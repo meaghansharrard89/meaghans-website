@@ -236,8 +236,18 @@ form textarea {
     display: none;
   }
 
+  /* Adjust the width and padding for smaller screens */
   #container {
-    width: 100%;
+    width: 90%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    width: calc(100% - 24px); /* Adjust as needed */
+    /* other styles */
   }
 }
 
