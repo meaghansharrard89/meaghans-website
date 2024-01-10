@@ -46,11 +46,13 @@ h3 {
 .project2 {
   width: 500px;
   height: auto;
+  max-width: 100%;
 }
 
 .project3 {
-  width: auto;
-  height: 400px;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
 }
 
 .headshot {
@@ -199,6 +201,11 @@ form button {
   box-sizing: border-box;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 /* Default styles for all screen sizes */
 
 @media only screen and (max-width: 600px) {
@@ -213,7 +220,14 @@ form button {
 }
 
 @media only screen and (max-width: 768px) {
-  /* Add styles for medium-sized screens */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .headshot,
+  .stars {
+    display: block; /* Adjust as needed */
+  }
 }
 
 @media only screen and (max-width: 1024px) {
