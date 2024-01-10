@@ -189,6 +189,9 @@ form textarea {
 .collapsible.active,
 .collapsible:hover {
   background-color: #3b7d54;
+  border-radius: 10px;
+  padding-bottom: 35px; /* Adjust the padding on hover */
+  height: auto; /* Adjust the height on hover */
 }
 
 .collapsible.active + .content {
