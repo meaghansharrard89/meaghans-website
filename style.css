@@ -92,6 +92,7 @@ input[type="text"] {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Playfair Display", serif;
 }
 
 .content {
@@ -113,6 +114,7 @@ textarea[type="text"] {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Playfair Display", serif;
 }
 
 input[type="submit"] {
@@ -121,6 +123,7 @@ input[type="submit"] {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Playfair Display", serif;
 }
 
 /* #container {
@@ -206,6 +209,8 @@ form textarea {
   margin: 20px 0 0; /* Adjusted margin */
   border-radius: 5px;
   width: 100%;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }
 
 .collapsible {
