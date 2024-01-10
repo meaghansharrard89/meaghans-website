@@ -228,3 +228,16 @@ form button {
 @media only screen and (max-width: 600px) {
   /* Styles for small screens (mobile) */
 }
+
+.logo-container,
+.img-container,
+.accordion-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-container.fade-in,
+.img-container.fade-in,
+.accordion-container.fade-in {
+  opacity: 1;
+}

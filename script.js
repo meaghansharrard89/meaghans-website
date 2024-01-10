@@ -45,6 +45,13 @@ panelToActivate
 // }
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Add fade-in class to logo, headshot/stars, and accordion-container after 1 second
+  setTimeout(function () {
+    document.querySelector(".logo-container").classList.add("fade-in");
+    document.querySelector(".img-container").classList.add("fade-in");
+    document.querySelector(".accordion-container").classList.add("fade-in");
+  }, 1000);
+
   // Wait for the DOM to be fully loaded before attaching event listeners
   var collapsibles = document.querySelectorAll(".collapsible");
 
@@ -68,27 +75,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//contact form
-// let contactForm = document.getElementById("contactForm");
+// contact form
+let contactForm = document.getElementById("contactForm");
 
-// contactForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-//   let firstname = document.getElementById("fname");
-//   let lastname = document.getElementById("lname");
-//   let email = document.getElementById("email");
-//   let phone = document.getElementById("phone");
-//   let subject = document.getElementById("subject");
-//   let message = document.getElementById("message");
+  let firstname = document.getElementById("fname");
+  let lastname = document.getElementById("lname");
+  let email = document.getElementById("email");
+  let phone = document.getElementById("phone");
+  let subject = document.getElementById("subject");
+  let message = document.getElementById("message");
 
-//   if (
-//     firstname.value == "" ||
-//     lastname.value == "" ||
-//     email.value == "" ||
-//     message.value == ""
-//   ) {
-//     console.log(alert("Please fill out all the fields!"));
-//   } else {
-//     console.log(alert("This form has been successfully submitted!"));
-//   }
-// });
+  if (
+    firstname.value == "" ||
+    lastname.value == "" ||
+    email.value == "" ||
+    message.value == ""
+  ) {
+    console.log(alert("Please fill out all the fields!"));
+  } else {
+    console.log(alert("This form has been successfully submitted!"));
+  }
+});
