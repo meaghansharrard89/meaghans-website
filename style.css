@@ -184,6 +184,7 @@ form textarea {
   outline: none;
   font-size: 17px;
   transition: background-color 0.5s;
+  border-radius: 10px;
 }
 
 .collapsible.active,
