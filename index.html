@@ -120,7 +120,11 @@
         </p>
       </div>
 
-      <form method="" id="contactForm">
+      <form
+        action="https://formsubmit.co/meaghansharrard89@gmail.com"
+        method="POST"
+        id="contactForm"
+      >
         <button type="button" class="collapsible slow-transition">
           Get in touch
         </button>
@@ -132,6 +136,20 @@
               name="firstname"
               placeholder="First name..."
             />
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New contact form submission"
+            />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://meaghansharrard.com/thankyou.html"
+            />
+
+            <input type="text" name="_honey" style="display: none" />
 
             <input
               type="text"
