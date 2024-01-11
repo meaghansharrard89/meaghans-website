@@ -16,6 +16,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  /* Contact Form */
+
+  var contactFormButton = document.querySelector("#contactForm .submit");
+  var contactForm = document.querySelector("#contactForm form");
+
+  contactFormButton.addEventListener("click", function () {
+    // Reset the form fields when the contact form button is clicked
+    contactForm.reset();
+
+    // Explicitly reset each form field
+    var formFields = contactForm.querySelectorAll("input, textarea");
+    formFields.forEach(function (field) {
+      field.value = "";
+    });
+  });
+
   /* Slow transition for accordion dropdowns */
 
   function toggleAccordion(button) {
@@ -33,5 +49,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-/* Contact Form */
