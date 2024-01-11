@@ -35,27 +35,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* Contact Form */
-
-let contactForm = document.getElementById("contactForm");
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let firstname = document.getElementById("fname");
-  let lastname = document.getElementById("lname");
-  let email = document.getElementById("email");
-  let phone = document.getElementById("phone");
-  let subject = document.getElementById("subject");
-  let message = document.getElementById("message");
-
-  if (
-    firstname.value == "" ||
-    lastname.value == "" ||
-    email.value == "" ||
-    message.value == ""
-  ) {
-    console.log(alert("Please fill out all the fields!"));
-  } else {
-    console.log(alert("This form has been successfully submitted!"));
-  }
-});

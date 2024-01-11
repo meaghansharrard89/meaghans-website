@@ -120,7 +120,11 @@
         </p>
       </div>
 
-      <form action="submit_form.php" method="post" id="contactForm">
+      <form
+        method="POST"
+        action="https://getform.io/f/ffdb16bc-e646-46da-a304-4efce4f06b1a"
+        id="contactForm"
+      >
         <button type="button" class="collapsible slow-transition">
           Get in touch
         </button>
@@ -159,6 +163,12 @@
               id="subject"
               name="subject"
               placeholder="Subject..."
+            />
+            <!-- add hidden Honeypot input to prevent spams -->
+            <input
+              type="hidden"
+              name="_gotcha"
+              style="display: none !important"
             />
 
             <textarea
