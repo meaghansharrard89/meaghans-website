@@ -214,7 +214,7 @@ form textarea {
 
 .collapsible.active,
 .collapsible:hover {
-  background-color: #3b7d54;
+  /* background-color: #3b7d54; */
   border-radius: 10px;
   padding-bottom: 35px; /* Adjust the padding on hover */
   height: auto; /* Adjust the height on hover */
@@ -241,6 +241,7 @@ form textarea {
   background-color: #c4c1a4;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .logo-container {
