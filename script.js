@@ -16,19 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* Contact Form */
+  document.addEventListener("DOMContentLoaded", function () {
+    var contactForm = document.getElementById("contactForm");
 
-  var contactFormButton = document.querySelector("#contactForm .submit");
-  var contactForm = document.querySelector("#contactForm form");
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission behavior
 
-  contactFormButton.addEventListener("click", function () {
-    // Reset the form fields when the contact form button is clicked
-    contactForm.reset();
+      // Your form submission logic (e.g., using AJAX) goes here
 
-    // Explicitly reset each form field
-    var formFields = contactForm.querySelectorAll("input, textarea");
-    formFields.forEach(function (field) {
-      field.value = "";
+      // Example: Logging form data to console
+      console.log("Form submitted with data:", new FormData(contactForm));
+
+      // Clear the form fields after submission
+      contactForm.reset();
     });
   });
 
