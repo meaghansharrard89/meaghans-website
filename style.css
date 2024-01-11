@@ -1,10 +1,10 @@
 h1 {
   position: relative;
   font-size: 5em;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Playfair Display", serif;
   font-weight: 550;
   display: block;
-  margin: auto;
+  /* margin: auto; */
   padding: 2em 5em 2em 2em;
 }
 
@@ -13,8 +13,20 @@ body {
   background: #ffc6ac;
   color: black;
   font-size: 10px;
-  margin: 0;
   height: auto;
+}
+
+.thank-you-container {
+  text-align: center;
+}
+
+.thank-you-container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.25em;
+  font-weight: lighter;
+  position: relative;
+  display: block;
+  padding: 2em 5em 2em 2em;
 }
 
 h3 {
@@ -244,6 +256,10 @@ form textarea {
     font-size: 2.5em;
   }
 
+  h2 {
+    font-size: 1.2em; /* Adjust the font size for smaller screens */
+  }
+
   .img-container {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -282,19 +298,23 @@ form textarea {
     justify-content: center;
     border-radius: 5px;
   }
+
+  .thank-you-container {
+    text-align: center;
+  }
 }
 
 /* Fade-in once page loads/refreshes */
 
 .logo-container,
 .img-container,
-.accordion-container {
+.accordion-container .thank-you-container {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .logo-container.fade-in,
 .img-container.fade-in,
-.accordion-container.fade-in {
+.accordion-container.fade-in .thank-you-container {
   opacity: 1;
 }
