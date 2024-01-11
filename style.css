@@ -308,13 +308,17 @@ form textarea {
 
 .logo-container,
 .img-container,
-.accordion-container .thank-you-container {
+.accordion-container,
+.thank-you-container,
+#container {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .logo-container.fade-in,
 .img-container.fade-in,
-.accordion-container.fade-in .thank-you-container {
+.accordion-container.fade-in,
+.thank-you-container.fade-in,
+#container.fade-in {
   opacity: 1;
 }
