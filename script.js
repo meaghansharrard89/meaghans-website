@@ -13,24 +13,33 @@ document.addEventListener("DOMContentLoaded", function () {
   collapsibles.forEach(function (collapsible) {
     collapsible.addEventListener("click", function () {
       toggleAccordion(this);
+
+      // Close other collapsibles
+      collapsibles.forEach(function (otherCollapsible) {
+        if (otherCollapsible !== collapsible) {
+          otherCollapsible.classList.remove("active");
+          var otherContent = otherCollapsible.nextElementSibling;
+          otherContent.style.maxHeight = null;
+        }
+      });
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var contactForm = document.getElementById("contactForm");
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var contactForm = document.getElementById("contactForm");
 
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent default form submission behavior
+  //   contactForm.addEventListener("submit", function (event) {
+  //     event.preventDefault(); // Prevent default form submission behavior
 
-      // Your form submission logic (e.g., using AJAX) goes here
+  //     // Your form submission logic (e.g., using AJAX) goes here
 
-      // Example: Logging form data to console
-      console.log("Form submitted with data:", new FormData(contactForm));
+  //     // Example: Logging form data to console
+  //     console.log("Form submitted with data:", new FormData(contactForm));
 
-      // Clear the form fields after submission
-      contactForm.reset();
-    });
-  });
+  //     // Clear the form fields after submission
+  //     contactForm.reset();
+  //   });
+  // });
 
   /* Slow transition for accordion dropdowns */
 
