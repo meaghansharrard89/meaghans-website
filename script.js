@@ -49,3 +49,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+// Event delegation for modal buttons
+document.addEventListener("click", function (event) {
+  console.log("Event listener triggered!"); // Add this line
+  if (event.target.classList.contains("modal-btn")) {
+    var modalId = event.target.getAttribute("data-modal-id");
+    openModal(modalId);
+  }
+
+  if (event.target.classList.contains("close")) {
+    var modalId = event.target.closest(".modal").id;
+    closeModal(modalId);
+  }
+
+  if (event.target.classList.contains("modal")) {
+    closeModal(event.target.id);
+  }
+});
+
+// Open modal function
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+
+openModal("resume"); // Test opening the 'resume' modal
+closeModal("resume"); // Test closing the 'resume' modal

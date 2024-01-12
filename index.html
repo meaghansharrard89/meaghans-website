@@ -69,58 +69,58 @@
         <img src="images/Resume2.png" class="resume" />
       </div> -->
 
-      <button type="button" class="collapsible slow-transition">
-        Portfolio and Resume
-      </button>
-      <div class="content">
-        <!-- <img src="images/Resume.png" class="resume" /> -->
-        <br>
-        <img src="images/Resume2.png" class="resume" />
-        <br>
-        <h3>
-          <a href="https://github.com/meaghansharrard89/coffee-worldwide"
-            >Bean There, Drank That!</a
-          >
-        </h3>
-        <p>
-          Developed a React web application, "Bean There, Drank That!", serving
-          as a virtual coffee shop to showcase a diverse array of coffee drinks
-          from around the world.
-        </p>
-        <img
-          class="project2"
-          src="images/project2.png"
-          alt="Bean There, Drank That!"
-        />
-        <p>
-          <a
-            href="https://www.linkedin.com/posts/meaghan-sharrard_react-activity-7138994740653428737-9zpC?utm_source=share&utm_medium=member_desktop"
-            >"Bean There, Drank That!"" walkthrough</a
-          >
-        </p>
-        <h3>
-          <a
-            href="https://github.com/meaghansharrard89/python-p3-v2-final-project-template"
-            >The Cookbook Chronicles</a
-          >
-        </h3>
-        <p>
-          Created "The Cookbook Chronicles," a comprehensive program offering
-          various menu options to manage recipes, ingredients, and categories
-          efficiently.
-        </p>
-        <img
-          class="project3"
-          src="images/project3.png"
-          alt="The Cookbook Chronicles"
-        />
-        <p>
-          <a
-            href="https://www.linkedin.com/posts/meaghan-sharrard_python-activity-7150530073140334592-DfYl/?utm_source=share&utm_medium=member_desktop"
-            >"The Cookbook Chronicles" walkthrough</a
-          >
-        </p>
-      </div>
+    <!-- Portfolio/Resume dropdown -->
+    <div class="dropdown">
+        <button type="button" class="collapsible slow-transition">Portfolio/Resume</button>
+        <div class="content">
+            <button class="modal-btn" data-modal-id="resume" onclick="openModal('resume')">Resume</button>
+            <button class="modal-btn" data-modal-id="project1">Bean There, Drank That!</button>
+            <button class="modal-btn" data-modal-id="project2">The Cookbook Chronicles</button>
+
+            <!-- Resume Modal -->
+            <div id="resume" class="modal">
+                <span class="close" onclick="closeModal('resume')">&times;</span>
+                <img src="images/Resume2.png" class="resume" alt="Resume">
+            </div>
+
+            <!-- Project 1 Modal -->
+            <div id="project1" class="modal">
+                <span class="close" onclick="closeModal('project1')">&times;</span>
+                <div class="modal-content">
+                  <p>
+                    Developed a React web application, "Bean There, Drank That!", serving
+                    as a virtual coffee shop to showcase a diverse array of coffee drinks
+                    from around the world.
+                  </p>
+                  <img src="images/project2.png" class="project2" alt="Bean There, Drank That!">
+                  <p>
+                    <a href="https://www.linkedin.com/posts/meaghan-sharrard_react-activity-7138994740653428737-9zpC?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">Project walkthrough</a>
+                  </p>
+                  <p>
+                  <a href="https://github.com/meaghansharrard89/coffee-worldwide" target="_blank" rel="noreferrer">GitHub Repo</a>
+                  </p>
+                  </div>
+                  </div>
+            <!-- Project 2 Modal -->
+            <div id="project2" class="modal">
+                <span class="close" onclick="closeModal('project2')">&times;</span>
+                <div class="modal-content">
+                  <p>
+                    Created "The Cookbook Chronicles," a comprehensive program offering
+                    various menu options to manage recipes, ingredients, and categories
+                    efficiently.
+                  </p>
+                <img src="images/project3.png" class="project3" alt="The Cookbook Chronicles">
+                <p>
+                    <a href="https://www.linkedin.com/posts/meaghan-sharrard_python-activity-7150530073140334592-DfYl/?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">Project walkthrough</a>
+                </p>
+                <p>
+                  <a href="https://github.com/meaghansharrard89/python-p3-v2-final-project-template" target="_blank" rel="noreferrer">GitHub Repo</a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
 
       <!-- Hide until further notice  -->
       <!-- <form
