@@ -59,9 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Event delegation for modal buttons
+// Modals
 document.addEventListener("click", function (event) {
-  console.log("Event listener triggered!"); // Add this line
   if (event.target.classList.contains("modal-btn")) {
     var modalId = event.target.getAttribute("data-modal-id");
     openModal(modalId);
@@ -75,18 +74,36 @@ document.addEventListener("click", function (event) {
   if (event.target.classList.contains("modal")) {
     closeModal(event.target.id);
   }
+
+  // Close modal when clicking anywhere outside the modal
+  if (
+    !event.target.closest(".modal") &&
+    !event.target.classList.contains("modal-btn")
+  ) {
+    var openModals = document.querySelectorAll(".modal");
+    openModals.forEach(function (modal) {
+      modal.classList.remove("open");
+      setTimeout(function () {
+        modal.style.display = "none";
+      }, 500); // Adjust the delay to match the transition duration
+    });
+  }
 });
 
 // Open modal function
 function openModal(modalId) {
   var modal = document.getElementById(modalId);
   modal.style.display = "block";
+  setTimeout(function () {
+    modal.classList.add("open");
+  }, 50); // Delay to ensure smooth transition
 }
 
+// Close modal function
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
-  modal.style.display = "none";
+  modal.classList.remove("open");
+  setTimeout(function () {
+    modal.style.display = "none";
+  }, 500); // Adjust the delay to match the transition duration
 }
-
-openModal("resume"); // Test opening the 'resume' modal
-closeModal("resume"); // Test closing the 'resume' modal

@@ -212,12 +212,8 @@ form textarea {
   border-radius: 10px;
 }
 
-.collapsible.active,
 .collapsible:hover {
-  /* background-color: #3b7d54; */
-  border-radius: 10px;
-  padding-bottom: 35px; /* Adjust the padding on hover */
-  height: auto; /* Adjust the height on hover */
+  color: #fff6dc;
 }
 
 .collapsible.active + .content {
@@ -329,9 +325,9 @@ form textarea {
   display: none;
   position: fixed;
   top: 50%;
-  background-color: #fff6dc;
+  background-color: rgba(255, 246, 220, 0.9);
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8);
   border: 1px solid #fff6dc;
   padding: 20px;
   border-radius: 10px;
@@ -340,6 +336,12 @@ form textarea {
   overflow: auto;
   z-index: 9999;
   box-sizing: border-box;
+  transition: opacity 0.5s, transform 0.75s;
+}
+
+.modal.open {
+  opacity: 1; /* Zoom-in effect when the modal is open */
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal::-webkit-scrollbar {
@@ -359,12 +361,18 @@ form textarea {
   text-align: center;
 }
 
-/* Keep the rest of the CSS for .close as it is */
+/* The Close Button */
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -383,7 +391,3 @@ form textarea {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-/* .links {
-  background: #ffc6ac;
-} */
