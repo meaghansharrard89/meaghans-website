@@ -39,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     collapsible.addEventListener("mouseleave", function () {
-      // Remove the class to enable hover effect
-      this.classList.remove("disable-hover");
+      // Remove the class to enable hover effect only if the collapsible is not closed
+      if (!this.classList.contains("active")) {
+        this.classList.remove("disable-hover");
+      }
     });
   });
 
@@ -95,6 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "none";
       isModalOpen = false; // Reset modal open status
     }, 500); // Adjust the delay to match the transition duration
+
+    // Remove the class to enable hover effect on the closed collapsible
+    var closedCollapsible = document.querySelector(".collapsible.active");
+    if (closedCollapsible) {
+      closedCollapsible.classList.remove("disable-hover");
+    }
   }
 
   /* Slow transition for accordion dropdowns */

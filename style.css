@@ -220,6 +220,10 @@ form textarea {
   color: inherit; /* or specify the desired color */
 }
 
+.collapsible:hover:not(.disable-hover) {
+  color: #fff6dc;
+}
+
 .collapsible.active + .content {
   display: block;
   max-height: 0px;
