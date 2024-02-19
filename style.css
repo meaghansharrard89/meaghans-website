@@ -90,6 +90,12 @@ p {
   max-height: 100%; /* Ensure the image doesn't exceed the modal height */
 }
 
+.techresume {
+  width: 100%; /* Adjust to fill the modal width */
+  height: auto;
+  max-height: 100%; /* Ensure the image doesn't exceed the modal height */
+}
+
 .headshot {
   width: 300px;
   max-width: 100%;
