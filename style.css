@@ -90,12 +90,6 @@ p {
   max-height: 100%; /* Ensure the image doesn't exceed the modal height */
 }
 
-.techresume {
-  width: 100%; /* Adjust to fill the modal width */
-  height: auto;
-  max-height: 100%; /* Ensure the image doesn't exceed the modal height */
-}
-
 .headshot {
   width: 300px;
   max-width: 100%;
@@ -393,7 +387,7 @@ form textarea {
 .modal-btn {
   padding: 15px 15px 15px 15px;
   background: #3b7d54;
-  color: black;
+  color: rgba(255, 246, 220, 0.9);
   font-size: 14px;
   border: 0;
   outline: none;
