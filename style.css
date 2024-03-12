@@ -84,6 +84,11 @@ p {
   height: auto;
 }
 
+.project4 {
+  max-width: 100%;
+  height: auto;
+}
+
 .resume {
   width: 100%; /* Adjust to fill the modal width */
   height: auto;
